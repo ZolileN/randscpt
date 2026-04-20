@@ -1,777 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rands Cape Town | Premium Chisa Nyama & Entertainment | Khayelitsha</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Space+Mono:wght@400;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rands Cape Town | Premium Chisa Nyama Experience</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- CURSORS -->
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
 
-<!-- MOBILE NAV -->
-<div class="mobile-nav" id="mobileNav">
-  <button class="mobile-nav-close" id="mobileClose">✕</button>
-  <a href="#about" onclick="closeMobileNav()">About</a>
-  <a href="#experience" onclick="closeMobileNav()">Experience</a>
-  <a href="#events" onclick="closeMobileNav()">Events</a>
-  <a href="#gallery" onclick="closeMobileNav()">Gallery</a>
-  <a href="#menu" onclick="closeMobileNav()">Menu</a>
-  <a href="#booking" onclick="closeMobileNav()">Book Now</a>
-</div>
+  <!-- MINIMAL NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">
+  <img src="images/logo.jpg" alt="Rands Cape Town" class="nav-logo-img">
+</a>
+    <ul class="nav-links">
+      <li><a href="#about">Origins</a></li>
+      <li><a href="#experience">The Vibe</a></li>
+      <li><a href="#menu">Palate</a></li>
+      <li><a href="#booking" class="nav-book">Reserve</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span></button>
+  </nav>
 
-<!-- NAVIGATION -->
-<nav id="navbar">
-  <a href="#" class="nav-logo">
-    <img src="images/logo.jpg" alt="Rands Logo" style="height: 50px; width: auto; margin-right: 10px;">
-    <span class="nav-logo-badge">® CAPE TOWN</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#events">Events</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#menu">Menu</a></li>
-    <li><a href="#booking" class="nav-book">Book Now</a></li>
-  </ul>
-  <button class="hamburger" id="hamburger">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-bg" style="background-image: url('images/hero2.jpg')"></div>
-  <div class="hero-noise"></div>
-  <div class="pattern-overlay"></div>
-  <div class="texture-grain"></div>
-  <div class="hero-line"></div>
-  <div class="hero-content">
-    <div class="hero-eyebrow">Khayelitsha, Cape Town · Est. Premium Chisa Nyama</div>
-    <h1 class="hero-title">
-      RANDS
-      <span>CAPE<br>TOWN</span>
-    </h1>
-    <p class="hero-sub">Where the township meets luxury. Authentic fire, real culture, unforgettable nights.</p>
-    <div class="hero-ctas">
-      <a href="#booking" class="btn-primary">Reserve Your Table</a>
-      <a href="#events" class="btn-ghost">Upcoming Events</a>
-    </div>
-  </div>
-  <div class="hero-scroll">Scroll to explore</div>
-</section>
-
-<!-- MARQUEE -->
-<div class="marquee-strip">
-  <div class="marquee-inner">
-    <div class="marquee-item">PREMIUM CHISA NYAMA <span class="marquee-dot"></span></div>
-    <div class="marquee-item">LIVE ENTERTAINMENT <span class="marquee-dot"></span></div>
-    <div class="marquee-item">KHAYELITSHA · CAPE TOWN <span class="marquee-dot"></span></div>
-    <div class="marquee-item">SUMMER SESSIONS <span class="marquee-dot"></span></div>
-    <div class="marquee-item">WORLD CLASS VIBES <span class="marquee-dot"></span></div>
-    <div class="marquee-item">PREMIUM CHISA NYAMA <span class="marquee-dot"></span></div>
-    <div class="marquee-item">LIVE ENTERTAINMENT <span class="marquee-dot"></span></div>
-    <div class="marquee-item">KHAYELITSHA · CAPE TOWN <span class="marquee-dot"></span></div>
-    <div class="marquee-item">SUMMER SESSIONS <span class="marquee-dot"></span></div>
-    <div class="marquee-item">WORLD CLASS VIBES <span class="marquee-dot"></span></div>
-  </div>
-</div>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="fade-up">
-    <div class="about-label">Our Story</div>
-    <h2 class="about-title">Born in the<br><em>Township,</em><br>Built for the World</h2>
-    <p class="about-body">
-      Rands Cape Town is more than a restaurant — it is a declaration. Situated in the heart of Khayelitsha, we are proof that world-class hospitality, premium food, and electric entertainment belong in every neighbourhood.
-    </p>
-    <blockquote class="about-quote">
-      "We are challenging the notion of what comes out of the township. You don't have to go all the way to town to get the treatment you deserve."
-      <br><small style="font-size:0.85rem; color: var(--text-muted); font-style:normal; font-family:'Space Mono',monospace; letter-spacing:0.1em;">— Mfundo, Co-Founder</small>
-    </blockquote>
-    <p class="about-body">
-      From signature braai platters and chakalaka to headline DJs and celebrity appearances, every visit to Rands is a full sensory experience rooted in South African culture, pride, and excellence.
-    </p>
-    <div class="about-stats">
-      <div class="stat-item">
-        <div class="stat-num">295K+</div>
-        <div class="stat-label">Community Followers</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">4.5★</div>
-        <div class="stat-label">Google Rating</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">1500+</div>
-        <div class="stat-label">Capacity</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="about-visual fade-up">
-    <div class="about-card">
-      <div class="about-card-bg">RANDS</div>
-      <div class="hours-title">⏱ Opening Hours</div>
-      <div class="hours-row">
-        <span class="hours-day">Mon – Wed</span>
-        <span class="hours-time hours-closed">Closed</span>
-      </div>
-      <div class="hours-row">
-        <span class="hours-day">Thursday</span>
-        <span class="hours-time hours-open">10:00 AM – 11:00 PM</span>
-      </div>
-      <div class="hours-row">
-        <span class="hours-day">Friday</span>
-        <span class="hours-time hours-open">10:00 AM – 11:00 PM</span>
-      </div>
-      <div class="hours-row">
-        <span class="hours-day">Saturday</span>
-        <span class="hours-time hours-open">10:00 AM – 11:00 PM</span>
-      </div>
-      <div class="hours-row">
-        <span class="hours-day">Sunday</span>
-        <span class="hours-time hours-open">10:00 AM – 10:00 PM</span>
-      </div>
-      <div class="location-block">
-        <div class="location-label">📍 Find Us</div>
-        <div class="location-text">
-          6 Makhabeni Road, Khaya Bazaar<br>
-          Khayelitsha, Cape Town, 7784
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-bg" style="background-image: url('images/hero2.jpg')"></div>
+    <div class="hero-container">
+     <h1 class="hero-title">
+        <div class="main-word">
+          <span class="flipped-letter">R</span>ANDS
         </div>
-        <div class="location-label" style="margin-top:1.2rem">📞 Call / WhatsApp</div>
-        <div class="location-text">
-          <a href="tel:+27838746082" style="color:var(--gold); text-decoration:none">+27 83 874 6082</a>
+        <span class="sub-text">CAPE<br>TOWN</span>
+      </h1>
+      <div class="hero-badge">Khayelitsha, Cape Town · Est. 2015 · Premium Chisa Nyama</div>
+      <div class="hero-scroll" id="heroScroll">
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION (Editorial Layout) -->
+  <section id="about">
+    <span class="section-label">// 01 Origins</span>
+    <div class="about-content fade-up">
+      <div class="about-left">
+        <h2 class="section-title">Born in the <em>Township</em>, built for the World.</h2>
+        <p class="about-body">
+           Rands Cape Town is more than a restaurant — it is a declaration. Situated in the heart of Khayelitsha, we are proof that world-class hospitality, premium food, and electric entertainment belong in every neighbourhood.
+        </p>
+        <blockquote class="about-quote">
+         "We are challenging the notion of what comes out of the township. You don't have to go all the way to town to get the treatment you deserve."
+          <br><small style="font-size:0.85rem; color: var(--text-muted); font-style:normal; font-family:'Space Mono',monospace; letter-spacing:0.1em;">— Mfundo, Co-Founder</small>
+        </blockquote>
+      </div>
+      <div class="about-right">
+        <!-- Asymmetrical spacing creates the FYN look -->
+        <img src="images/rands10.jpg" alt="Rands Premium Experience" class="about-image">
+        <div class="stat-item fade-up">
+          <span class="stat-num">295K</span>
+          <span class="stat-label">Community Followers</span>
+        </div>
+        <div class="stat-item fade-up">
+          <span class="stat-num">4.5*</span>
+          <span class="stat-label">Google Rating</span>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CULTURAL STORY -->
-<section id="culture">
-  <div class="section-header fade-up">
-    <div>
-      <div class="section-label">Our Heritage</div>
-      <h2 class="section-title">From Khayelitsha<br><em>To The World</em></h2>
-    </div>
-  </div>
-
-  <div class="culture-timeline fade-up">
-    <div class="timeline-item">
-      <div class="timeline-year">2015</div>
-      <div class="timeline-content">
-        <h3 class="timeline-title">The Beginning</h3>
-        <p class="timeline-desc">Born from a vision to bring world-class hospitality to Khayelitsha, Rands started as a small local spot with big dreams.</p>
+  <!-- CULTURAL STORY -->
+  <section id="culture">
+    <div class="section-header fade-up">
+      <div>
+        <div class="section-label">// 02 Our Heritage</div>
+        <h2 class="section-title">From Khayelitsha<br><em>To The World</em></h2>
       </div>
     </div>
-    
-    <div class="timeline-item">
-      <div class="timeline-year">2018</div>
-      <div class="timeline-content">
-        <h3 class="timeline-title">Community Roots</h3>
-        <p class="timeline-desc">Became a local institution, known for authentic braai culture and supporting township artists and musicians.</p>
-      </div>
-    </div>
-    
-    <div class="timeline-item">
-      <div class="timeline-year">2020</div>
-      <div class="timeline-content">
-        <h3 class="timeline-title">National Recognition</h3>
-        <p class="timeline-desc">Featured in major publications and became a destination for food lovers seeking authentic South African experiences.</p>
-      </div>
-    </div>
-    
-    <div class="timeline-item">
-      <div class="timeline-year">2023</div>
-      <div class="timeline-content">
-        <h3 class="timeline-title">Global Impact</h3>
-        <p class="timeline-desc">International visitors and celebrities discovered Rands, putting Khayelitsha on the global culinary map.</p>
-      </div>
-    </div>
-  </div>
 
-  <div class="culture-values fade-up">
-    <div class="value-card">
-      <div class="value-icon"> flame</div>
-      <h3 class="value-title">Authentic Fire</h3>
-      <p class="value-desc">Traditional braai methods passed down through generations, cooked with passion and served with pride.</p>
-    </div>
-    
-    <div class="value-card">
-      <div class="value-icon">music</div>
-      <h3 class="value-title">Township Sounds</h3>
-      <p class="value-desc">Celebrating South African music culture, from local artists to international DJs who respect our roots.</p>
-    </div>
-    
-    <div class="value-card">
-      <div class="value-icon">community</div>
-      <h3 class="value-title">Unity & Pride</h3>
-      <p class="value-desc">Creating opportunities, supporting local talent, and showing the world the beauty of township excellence.</p>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-header fade-up">
-    <div>
-      <div class="section-label">02 — What We Offer</div>
-      <h2 class="section-title">The Full<br>Rands Experience</h2>
-    </div>
-    <a href="#booking" class="btn-ghost">Reserve Now</a>
-  </div>
-
-  <div class="experience-grid fade-up">
-    <div class="exp-card featured">
-      <div class="exp-num">01</div>
-      <div class="exp-icon">🔥</div>
-      <img src="images/braai.jpg" alt="Premium Chisa Nyama" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-      <h3 class="exp-title">Premium Chisa Nyama</h3>
-      <p class="exp-body">
-        Fire-grilled perfection. Our open braai turns premium cuts — lamb chops, ribs, chicken — into ceremonial experiences. Served with chakalaka, creamy spinach, and hand-stirred pap that has no business tasting this good.
-      </p>
-      <p class="exp-body" style="margin-top:1rem">
-        Paired with icy cold beverages and world-class service, every plate at Rands is a love letter to South African food culture.
-      </p>
-      <span class="exp-tag">Braai · Pap · Chakalaka</span>
-    </div>
-    <div class="exp-card">
-      <div class="exp-num">02</div>
-      <div class="exp-icon">🎶</div>
-      <img src="images/live.jpg" alt="Live Entertainment" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-      <h3 class="exp-title">Live Entertainment</h3>
-      <p class="exp-body">Celebrity DJs and artists from across South Africa choose Rands. The sound system is legendary, sets are unforgettable.</p>
-      <span class="exp-tag">DJ Sets · Live Acts</span>
-    </div>
-    <div class="exp-card">
-      <div class="exp-num">03</div>
-      <div class="exp-icon">🛡️</div>
-      <img src="images/security.jpg" alt="Secure & Clean" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-      <h3 class="exp-title">Secure & Clean</h3>
-      <p class="exp-body">24/7 security, visible marshals, spotless facilities. Arrive in peace, leave with memories.</p>
-      <span class="exp-tag">Safe · Accessible</span>
-    </div>
-    <div class="exp-card">
-      <div class="exp-num">04</div>
-      <div class="exp-icon">🌅</div>
-      <img src="images/night2.jpg" alt="Sunset Gatherings" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-      <h3 class="exp-title">Sunset Gatherings</h3>
-      <p class="exp-body">Spacious outdoor areas, perfect for group sundowners. Sunday sessions hit different under the Cape Town sky.</p>
-      <span class="exp-tag">Outdoor · Sundowners</span>
-    </div>
-    <div class="exp-card">
-      <div class="exp-num">05</div>
-      <div class="exp-icon">🎉</div>
-      <img src="images/vip.jpg" alt="Private Events" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-      <h3 class="exp-title">Private Events</h3>
-      <p class="exp-body">Corporate functions, private celebrations, and branded activations. The Rands team customises every detail for your occasion.</p>
-      <span class="exp-tag">Venue Hire · Events</span>
-    </div>
-  </div>
-</section>
-
-<!-- EVENTS -->
-<section id="events">
-  <div class="section-header fade-up">
-    <div>
-      <div class="section-label">03 — What's On</div>
-      <h2 class="section-title">Upcoming<br>Events</h2>
-    </div>
-    <div class="live-badge"><span class="live-dot"></span>Live on Instagram @randscapetown</div>
-  </div>
-
-  <div class="events-grid fade-up">
-    <div class="event-card">
-      <div class="event-header">
-        <div>
-          <div class="event-date-num">EVERY</div>
-          <div class="event-date-month">Friday & Saturday</div>
+    <div class="culture-timeline fade-up">
+      <div class="timeline-item">
+        <div class="timeline-year">2015</div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">The Beginning</h3>
+          <p class="timeline-desc">Born from a vision to bring world-class hospitality to Khayelitsha, Rands started as a small local spot with big dreams.</p>
         </div>
-        <div class="event-badge">Free Entry</div>
       </div>
-      <div class="event-body">
-        <h3 class="event-title">Friday & Saturday Sessions</h3>
-        <p class="event-desc">The main event. Resident DJs, premium sound, fire food. Doors open 10AM — get there early, it fills up fast.</p>
-        <div class="event-meta">
-          <div class="event-meta-item">10AM – 11PM</div>
-          <div class="event-meta-item">Khayelitsha</div>
+      
+      <div class="timeline-item">
+        <div class="timeline-year">2018</div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">Community Roots</h3>
+          <p class="timeline-desc">Became a local institution, known for authentic braai culture and supporting township artists and musicians.</p>
         </div>
-        <a href="https://wa.me/27838746082?text=Hi%20Rands%2C%20I%27d%20like%20to%20book%20for%20Friday%2FSaturday%20sessions." class="btn-primary" target="_blank">Reserve Table</a>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-year">2020</div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">National Recognition</h3>
+          <p class="timeline-desc">Featured in major publications and became a destination for food lovers seeking authentic South African experiences.</p>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-year">2023</div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">Global Impact</h3>
+          <p class="timeline-desc">International visitors and celebrities discovered Rands, putting Khayelitsha on the global culinary map.</p>
+        </div>
       </div>
     </div>
 
-    <div class="event-card">
-      <div class="event-header gold-bg">
-        <div>
-          <div class="event-date-num">EVERY</div>
-          <div class="event-date-month">Sunday</div>
-        </div>
-        <div class="event-badge">Sunday Chillaz</div>
+    <div class="culture-values fade-up">
+      <div class="value-card">
+        <div class="value-icon">flame</div>
+        <h3 class="value-title">Authentic Fire</h3>
+        <p class="value-desc">Traditional braai methods passed down through generations, cooked with passion and served with pride.</p>
       </div>
-      <div class="event-body">
-        <h3 class="event-title">Sunday Chillaz</h3>
-        <p class="event-desc">Beautiful, chilled vibes. Pap and vleis, cold beverages, and the kind of sunset that makes you feel alive. A Khayelitsha institution.</p>
-        <div class="event-meta">
-          <div class="event-meta-item">10AM – 10PM</div>
-          <div class="event-meta-item">Relaxed Vibe</div>
-        </div>
-        <a href="https://wa.me/27838746082?text=Hi%20Rands%2C%20I%27d%20like%20to%20book%20for%20Sunday%20Chillaz." class="btn-primary" target="_blank">Reserve Table</a>
+      
+      <div class="value-card">
+        <div class="value-icon">music</div>
+        <h3 class="value-title">Township Sounds</h3>
+        <p class="value-desc">Celebrating South African music culture, from local artists to international DJs who respect our roots.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">community</div>
+        <h3 class="value-title">Unity & Pride</h3>
+        <p class="value-desc">Creating opportunities, supporting local talent, and showing the world the beauty of township excellence.</p>
       </div>
     </div>
+  </section>
 
-    <div class="event-card">
-      <div class="event-header dark-bg">
-        <div>
-          <div class="event-date-num">ANNUAL</div>
-          <div class="event-date-month">Dec – Jan</div>
-        </div>
-        <div class="event-badge">Signature</div>
-      </div>
-      <div class="event-body">
-        <h3 class="event-title">Rands Summer Sessions</h3>
-        <p class="event-desc">The biggest celebration of the year. World-class artists, surprises, and free music through the festive season. Follow @randscapetown for announcements.</p>
-        <div class="event-meta">
-          <div class="event-meta-item">Nov – Jan</div>
-          <div class="event-meta-item">Multi-Day</div>
-        </div>
-        <a href="https://www.instagram.com/randscapetown/" class="btn-ghost" target="_blank" style="display:inline-block">Follow for Updates</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="events-cta fade-up">
-    <p style="font-size:1.1rem; font-style:italic; color:var(--text-muted); margin-bottom:2rem">Follow us on Instagram and Facebook for the latest events, artist announcements and more.</p>
-    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-      <a href="https://www.instagram.com/randscapetown/" class="btn-primary" target="_blank">@randscapetown on IG</a>
-      <a href="https://web.facebook.com/RandsCPT/" class="btn-ghost" target="_blank">Facebook: RandsCPT</a>
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery">
-  <div class="section-header fade-up">
-    <div>
-      <div class="section-label">04 — The Vibe</div>
-      <h2 class="section-title">Gallery</h2>
-    </div>
+  <!-- EXPERIENCE (Staggered Grid) -->
+  <section id="experience">
+    <span class="section-label">// 03 The Experience</span>
     <a href="https://www.instagram.com/randscapetown/" class="btn-ghost" target="_blank">View on Instagram →</a>
-  </div>
+    <div class="experience-grid">
+      <div class="exp-card fade-up">
+        <img src="images/music.jpg" alt="Music">
+        <h3 class="exp-title">The Music</h3>
+        <p class="about-body">Live performances that bring the township spirit to life.</p>
+      </div>
+      <div class="exp-card fade-up">
+        <img src="images/live.jpg" alt="Entertainment">
+        <h3 class="exp-title">The Sound</h3>
+        <p class="about-body">Where the country's greatest artists come to play.</p>
+      </div>
+      <div class="exp-card fade-up">
+        <img src="images/night2.jpg" alt="Nightlife">
+        <h3 class="exp-title">The Nightlife</h3>
+        <p class="about-body">Where the city comes to celebrate, dance, and unwind under the stars.</p>
+      </div>
+      <div class="exp-card fade-up">
+        <img src="images/vibe2.jpg" alt="Vibe">
+        <h3 class="exp-title">The Vibe</h3>
+        <p class="about-body">Party atmosphere, great music, and unforgettable moments.</p>
+      </div>
+    </div>
 
-  <!-- GALLERY FILTERS -->
-  <div class="gallery-filters fade-up">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="food">Food & Braai</button>
-    <button class="filter-btn" data-filter="vibe">Vibe & Atmosphere</button>
-    <button class="filter-btn" data-filter="events">Events</button>
-    <button class="filter-btn" data-filter="vip">VIP & Lounge</button>
-  </div>
+  </section>
 
-  <div class="gallery-grid fade-up">
-    <div class="gallery-item wide">
-      <div class="gallery-bg gal-1" style="height:100%; background-image: url('images/africa.jpg'); background-size: cover; background-position: center;">
+  <!-- GALLERY (Horizontal Reveal) -->
+  <section id="gallery" style="padding-bottom: 0;">
+    <span class="section-label">// 04 In Focus</span>
+    <div class="sliding-gallery fade-up">
+      <div class="gallery-container" id="galleryContainer">
+        <div class="gallery-slide"><img src="images/phori.jpg" alt="Vibe 1"></div>
+        <div class="gallery-slide"><img src="images/cigar.jpg" alt="Vibe 2"></div>
+        <div class="gallery-slide"><img src="images/night.jpg" alt="Vibe 3"></div>
+        <div class="gallery-slide"><img src="images/security.jpg" alt="Security"></div>
+        <div class="gallery-slide"><img src="images/life.jpg" alt="Saturday Night Vibes"></div>
+        <div class="gallery-slide"><img src="images/mshayi.jpg" alt="Khayelitsha Nights"></div>
+        <div class="gallery-slide"><img src="images/vip.jpg" alt="VIP Lounge Experience"></div>
+        <div class="gallery-slide"><img src="images/vibe.jpg" alt="Live Entertainment"></div>
+        <div class="gallery-slide"><img src="images/live.jpg" alt="Summer Sessions"></div>
+        <div class="gallery-slide"><img src="images/music.jpg" alt="World Class Music"></div>
       </div>
-      <div class="gallery-overlay"><div class="gallery-caption">Premium African Cuisines</div></div>
     </div>
-    <div class="gallery-item tall">
-      <div class="gallery-bg gal-2" style="height:100%; background-image: url('images/phori.jpg'); background-size: cover; background-position: center;">
-        <div style="text-align:center"><span class="gal-icon">🎶</span><div class="gal-label">LIVE SETS</div></div>
-      </div>
-      <div class="gallery-overlay"><div class="gallery-caption">Friday Night Sessions</div></div>
-    </div>
-    <div class="gallery-item">
-      <div class="gallery-bg gal-3" style="height:100%; background-image: url('images/stage.jpg'); background-size: cover; background-position: center;">
-      </div>
-      <div class="gallery-overlay"><div class="gallery-caption">Sunday Chillaz</div></div>
-    </div>
-    <div class="gallery-item">
-      <div class="gallery-bg gal-4" style="height:100%; background-image: url('images/night2.jpg'); background-size: cover; background-position: center;">
-      </div>
-      <div class="gallery-overlay"><div class="gallery-caption">Saturday Night Vibes</div></div>
-    </div>
-    <div class="gallery-item">
-      <div class="gallery-bg gal-5" style="height:100%; background-image: url('images/vibe2.jpg'); background-size: cover; background-position: center;">
-      </div>
-      <div class="gallery-overlay"><div class="gallery-caption">Summer Sessions</div></div>
-    </div>
-    <div class="gallery-item">
-      <div class="gallery-bg gal-6" style="height:100%; background-image: url('images/twins.jpg'); background-size: cover; background-position: center;">
-      </div>
-      <div class="gallery-overlay"><div class="gallery-caption">The Rands Community</div></div>
-    </div>
-    <div class="gallery-item">
-      <div class="gallery-bg gal-7" style="height:100%; background-image: url('images/life.jpg'); background-size: cover; background-position: center;">
-      </div>
-      <div class="gallery-overlay"><div class="gallery-caption">Sunday Night Vibes</div></div>
-    </div>
-    <div class="gallery-item">
-      <div class="gallery-bg gal-8" style="height:100%; background-image: url('images/cigar.jpg'); background-size: cover; background-position: center;">
-      </div>
-      <div class="gallery-overlay"><div class="gallery-caption">Lounge Experience</div></div>
-    </div>
-    <div class="gallery-item">
-      <div class="gallery-bg gal-9" style="height:100%; background-image: url('images/event.jpg'); background-size: cover; background-position: center;">
-      </div>
-      <div class="gallery-overlay"><div class="gallery-caption">VVIP Experience</div></div>
-    </div>
-    <div class="gallery-item">
-      <div class="gallery-bg gal-10" style="height:100%; background-image: url('images/music.jpg'); background-size: cover; background-position: center;">
-      </div>
-      <div class="gallery-overlay"><div class="gallery-caption">Live Music</div></div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- MENU PREVIEW -->
-<section id="menu">
-  <div class="section-header fade-up">
-    <div>
-      <div class="section-label">05 — Taste of Rands</div>
-      <h2 class="section-title">The Menu</h2>
-    </div>
-    <a href="https://wa.me/27838746082?text=Hi%20Rands%2C%20please%20send%20me%20your%20full%20menu." class="btn-ghost" target="_blank">Full Menu via WhatsApp</a>
-  </div>
-
-  <div class="menu-grid fade-up">
-    <div>
-      <div class="menu-category-title">🔥 From the Braai</div>
+  <!-- MENU SECTION -->
+  <section id="menu">
+    <span class="section-label">// 05 The Palate</span>
+    <h2 class="section-title">A Modern <em>Curation</em></h2>
+    <div class="menu-container fade-up">
       <div class="menu-item">
-        <div>
-          <div class="menu-item-name">Lamb Chops</div>
-          <div class="menu-item-desc">Fire-grilled, seasoned to perfection</div>
-        </div>
-        <div class="menu-item-dots"></div>
-        <div style="color:var(--gold); font-family:'Space Mono',monospace; font-size:0.9rem; white-space:nowrap">Market Price</div>
+        <span class="menu-item-name">Signature Lamb Chops</span>
+        <span class="menu-item-price">R 450</span>
       </div>
       <div class="menu-item">
-        <div>
-          <div class="menu-item-name">Pork Ribs</div>
-          <div class="menu-item-desc">Slow-cooked, braai-finished</div>
-        </div>
-        <div class="menu-item-dots"></div>
-        <div style="color:var(--gold); font-family:'Space Mono',monospace; font-size:0.9rem; white-space:nowrap">Market Price</div>
+        <span class="menu-item-name">The Rands Platter</span>
+        <span class="menu-item-price">R 450</span>
       </div>
       <div class="menu-item">
-        <div>
-          <div class="menu-item-name">Chicken Wings</div>
-          <div class="menu-item-desc">Marinated and charred over open fire</div>
-        </div>
-        <div class="menu-item-dots"></div>
-        <div style="color:var(--gold); font-family:'Space Mono',monospace; font-size:0.9rem; white-space:nowrap">Market Price</div>
+        <span class="menu-item-name">Traditional Chakalaka</span>
+        <span class="menu-item-price">Included</span>
       </div>
       <div class="menu-item">
-        <div>
-          <div class="menu-item-name">Boerewors</div>
-          <div class="menu-item-desc">Traditional SA sausage, fresh off the fire</div>
-        </div>
-        <div class="menu-item-dots"></div>
-        <div style="color:var(--gold); font-family:'Space Mono',monospace; font-size:0.9rem; white-space:nowrap">Market Price</div>
-      </div>
-    </div>
-
-    <div>
-      <div class="menu-category-title">🌿 Township Sides</div>
-      <div class="menu-item">
-        <div>
-          <div class="menu-item-name">Chakalaka</div>
-          <div class="menu-item-desc">Our most popular side. Spiced, bold, legendary</div>
-        </div>
-        <div class="menu-item-dots"></div>
-        <div style="color:var(--gold); font-family:'Space Mono',monospace; font-size:0.9rem; white-space:nowrap">Included</div>
+        <span class="menu-item-name">Pap & Creamy Spinach</span>
+        <span class="menu-item-price">R 120</span>
       </div>
       <div class="menu-item">
-        <div>
-          <div class="menu-item-name">Pap</div>
-          <div class="menu-item-desc">Hand-stirred, creamy, smooth</div>
-        </div>
-        <div class="menu-item-dots"></div>
-        <div style="color:var(--gold); font-family:'Space Mono',monospace; font-size:0.9rem; white-space:nowrap">Included</div>
+        <span class="menu-item-name">Boerewors</span>
+        <span class="menu-item-price">R 180</span>
       </div>
       <div class="menu-item">
-        <div>
-          <div class="menu-item-name">Creamy Spinach</div>
-          <div class="menu-item-desc">Rich, comforting, Khayelitsha-style</div>
-        </div>
-        <div class="menu-item-dots"></div>
-        <div style="color:var(--gold); font-family:'Space Mono',monospace; font-size:0.9rem; white-space:nowrap">Included</div>
+        <span class="menu-item-name">Chicken Wings</span>
+        <span class="menu-item-price">R 150</span>
       </div>
       <div class="menu-item">
-        <div>
-          <div class="menu-item-name">Bread & Salads</div>
-          <div class="menu-item-desc">Fresh accompaniments to complete the spread</div>
+        <span class="menu-item-name">Pork Ribs</span>
+        <span class="menu-item-price">R 220</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Grilled Sausages</span>
+        <span class="menu-item-price">R 160</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Braai Platter (For 2)</span>
+        <span class="menu-item-price">R 850</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Sunday Special</span>
+        <span class="menu-item-price">R 280</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Kids Meal</span>
+        <span class="menu-item-price">R 95</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Fresh Salads</span>
+        <span class="menu-item-price">R 85</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div>
+          <div class="footer-brand-name">RANDS<br><span>CAPE TOWN</span></div>
+          <p class="footer-tagline">Premium Chisa Nyama & Entertainment Mecca. Born in Khayelitsha. Built for World.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/randscapetown/" class="social-btn" target="_blank" title="Instagram">IG</a>
+            <a href="https://web.facebook.com/RandsCPT/" class="social-btn" target="_blank" title="Facebook">FB</a>
+            <a href="https://wa.me/27838746082" class="social-btn" target="_blank" title="WhatsApp">WA</a>
+            <a href="https://www.tiktok.com/@randscapetown" class="social-btn" target="_blank" title="TikTok">TK</a>
+          </div>
         </div>
-        <div class="menu-item-dots"></div>
-        <div style="color:var(--gold); font-family:'Space Mono',monospace; font-size:0.9rem; white-space:nowrap">Seasonal</div>
-      </div>
-      <div class="menu-note">Full menu & beverages — contact us on WhatsApp or visit in person.</div>
-    </div>
-  </div>
-</section>
 
-<!-- BOOKING -->
-<section id="booking">
-  <div class="booking-glow"></div>
-  <div class="booking-inner">
-    <div class="fade-up">
-      <div class="section-label" style="justify-content:center; display:flex">06 — Reservations</div>
-      <h2 class="booking-title">
-        Book Your
-        <em>Experience</em>
-      </h2>
-      <p class="booking-sub">
-        Whether it's a table for two or a private event for two hundred — we make it happen. Contact us directly and our team will take care of everything.
-      </p>
-    </div>
+        <div>
+          <div class="footer-col-title">Navigate</div>
+          <ul class="footer-links">
+            <li><a href="#about">About Rands</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#booking">Reservations</a></li>
+          </ul>
+        </div>
 
-    <div class="booking-options fade-up">
-      <div class="booking-option">
-        <div class="booking-option-icon">🍽️</div>
-        <div class="booking-option-title">Table Booking</div>
-        <p class="booking-option-desc">Reserve your spot for any Thursday to Sunday session. Walk-ins welcome, but booking guarantees your seat.</p>
-        <a href="https://wa.me/27838746082?text=Hi%20Rands%2C%20I%27d%20like%20to%20book%20a%20table." class="btn-wa" target="_blank">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Book via WhatsApp
-        </a>
-      </div>
+        <div>
+          <div class="footer-col-title">Hours</div>
+          <ul class="footer-links">
+            <li><span style="color:var(--text-muted); font-size:0.95rem">Mon–Wed: Closed</span></li>
+            <li><span style="color:var(--cream); font-size:0.95rem">Thu–Sat: 10AM–11PM</span></li>
+            <li><span style="color:var(--cream); font-size:0.95rem">Sunday: 10AM–10PM</span></li>
+          </ul>
+        </div>
 
-      <div class="booking-option featured-opt">
-        <div class="booking-option-icon">🎉</div>
-        <div class="booking-option-title">Private Events</div>
-        <p class="booking-option-desc">Birthdays, corporates, celebrations. We turn the whole Rands experience into your exclusive event — custom menus, dedicated staff, curated entertainment.</p>
-        <a href="https://wa.me/27838746082?text=Hi%20Rands%2C%20I%27d%20like%20to%20enquire%20about%20hosting%20a%20private%20event." class="btn-primary" target="_blank">Enquire Now</a>
-      </div>
-
-      <div class="booking-option">
-        <div class="booking-option-icon">📅</div>
-        <div class="booking-option-title">Event Tickets</div>
-        <p class="booking-option-desc">For ticketed events and special sessions, follow us on Instagram or check WebTickets for the latest availability and bookings.</p>
-        <a href="https://www.webtickets.co.za/" class="btn-ghost" target="_blank" style="display:inline-block">WebTickets</a>
-      </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-label">Address</div>
+            <div class="footer-contact-value">6 Makhabeni Road, Khaya Bazaar<br>Khayelitsha, Cape Town 7784</div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-label">Phone & WhatsApp</div>
+            <div class="footer-contact-value"><a href="tel:+27838746082">+27 83 874 6082</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-label">Private Events</div>
+            <div class="footer-contact-value"><a href="https://wa.me/27838746082?text=Private%20event%20enquiry" target="_blank">Contact via WhatsApp</a></div>
+          </div>
+        </div>
     </div>
 
-    <div class="booking-ctas fade-up">
-      <a href="tel:+27838746082" class="btn-ghost">📞 +27 83 874 6082</a>
-      <a href="https://wa.me/27838746082" class="btn-wa" target="_blank">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        WhatsApp Us
-      </a>
+    <div class="footer-bottom">
+      <span class="footer-copy"> 2026 Rands Cape Town · All Rights Reserved</span>
+      <span class="footer-copy">Khayelitsha · Cape Town · South Africa</span>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-top">
-    <div>
-      <div class="footer-brand-name">RANDS<br><span>CAPE TOWN</span></div>
-      <p class="footer-tagline">Premium Chisa Nyama & Entertainment Mecca. Born in Khayelitsha. Built for the World.</p>
-      <div class="footer-social">
-        <a href="https://www.instagram.com/randscapetown/" class="social-btn" target="_blank" title="Instagram">IG</a>
-        <a href="https://web.facebook.com/RandsCPT/" class="social-btn" target="_blank" title="Facebook">FB</a>
-        <a href="https://wa.me/27838746082" class="social-btn" target="_blank" title="WhatsApp">WA</a>
-        <a href="https://www.tiktok.com/@randscapetown" class="social-btn" target="_blank" title="TikTok">TK</a>
-      </div>
-    </div>
-
-    <div>
-      <div class="footer-col-title">Navigate</div>
-      <ul class="footer-links">
-        <li><a href="#about">About Rands</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#booking">Reservations</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <div class="footer-col-title">Hours</div>
-      <ul class="footer-links">
-        <li><span style="color:var(--text-muted); font-size:0.95rem">Mon–Wed: Closed</span></li>
-        <li><span style="color:var(--cream); font-size:0.95rem">Thu–Sat: 10AM–11PM</span></li>
-        <li><span style="color:var(--cream); font-size:0.95rem">Sunday: 10AM–10PM</span></li>
-      </ul>
-    </div>
-
-    <div>
-      <div class="footer-col-title">Contact</div>
-      <div class="footer-contact-item">
-        <div class="footer-contact-label">Address</div>
-        <div class="footer-contact-value">6 Makhabeni Road, Khaya Bazaar<br>Khayelitsha, Cape Town 7784</div>
-      </div>
-      <div class="footer-contact-item">
-        <div class="footer-contact-label">Phone & WhatsApp</div>
-        <div class="footer-contact-value"><a href="tel:+27838746082">+27 83 874 6082</a></div>
-      </div>
-      <div class="footer-contact-item">
-        <div class="footer-contact-label">Private Events</div>
-        <div class="footer-contact-value"><a href="https://wa.me/27838746082?text=Private%20event%20enquiry" target="_blank">Contact via WhatsApp</a></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <span class="footer-copy">© 2025 Rands Cape Town · All Rights Reserved</span>
-    <span class="footer-copy">Khayelitsha · Cape Town · South Africa</span>
-  </div>
-</footer>
-
-<script>
-  // CURSOR
-  const cursor = document.getElementById('cursor');
-  const cursorRing = document.getElementById('cursorRing');
-  let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
-  document.addEventListener('mousemove', e => {
-    mouseX = e.clientX; mouseY = e.clientY;
-    cursor.style.left = mouseX + 'px';
-    cursor.style.top = mouseY + 'px';
-  });
-  function animateRing() {
-    ringX += (mouseX - ringX) * 0.12;
-    ringY += (mouseY - ringY) * 0.12;
-    cursorRing.style.left = ringX + 'px';
-    cursorRing.style.top = ringY + 'px';
-    requestAnimationFrame(animateRing);
-  }
-  animateRing();
-  document.querySelectorAll('a, button').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cursor.style.width = '20px'; cursor.style.height = '20px';
-      cursorRing.style.width = '52px'; cursorRing.style.height = '52px';
-    });
-    el.addEventListener('mouseleave', () => {
-      cursor.style.width = '12px'; cursor.style.height = '12px';
-      cursorRing.style.width = '36px'; cursorRing.style.height = '36px';
-    });
-  });
-
-  // NAVBAR SCROLL
-  const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 60);
-  });
-
-  // MOBILE NAV
-  const hamburger = document.getElementById('hamburger');
-  const mobileNav = document.getElementById('mobileNav');
-  const mobileClose = document.getElementById('mobileClose');
-  hamburger.addEventListener('click', () => mobileNav.classList.add('open'));
-  mobileClose.addEventListener('click', () => mobileNav.classList.remove('open'));
-  function closeMobileNav() { mobileNav.classList.remove('open'); }
-
-  // INTERSECTION OBSERVER for fade-up
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-</script>
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-  <div class="lightbox-content">
-    <button class="lightbox-close" id="lightboxClose">&times;</button>
-    <img src="" alt="" class="lightbox-img" id="lightboxImg">
-    <div class="lightbox-caption" id="lightboxCaption"></div>
-  </div>
-</div>
-
-<script>
-  // GALLERY FILTERS AND LIGHTBOX
-  document.addEventListener('DOMContentLoaded', function() {
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightboxImg');
-    const lightboxCaption = document.getElementById('lightboxCaption');
-    const lightboxClose = document.getElementById('lightboxClose');
-
-    // Add categories to gallery items
-    const categories = {
-      'gal-1': 'food',
-      'gal-2': 'events', 
-      'gal-3': 'events',
-      'gal-4': 'vibe',
-      'gal-5': 'vibe',
-      'gal-6': 'vibe',
-      'gal-7': 'vibe',
-      'gal-8': 'vip',
-      'gal-9': 'vip',
-      'gal-10': 'events'
-    };
-
-    galleryItems.forEach(item => {
-      const galClass = item.querySelector('.gallery-bg').className.split(' ').find(cls => cls.startsWith('gal-'));
-      if (categories[galClass]) {
-        item.setAttribute('data-category', categories[galClass]);
-      }
-    });
-
-    // Filter functionality
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', function() {
-        const filter = this.getAttribute('data-filter');
-        
-        // Update active button
-        filterBtns.forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-        
-        // Filter items
-        galleryItems.forEach(item => {
-          if (filter === 'all' || item.getAttribute('data-category') === filter) {
-            item.classList.remove('hidden');
-          } else {
-            item.classList.add('hidden');
-          }
-        });
-      });
-    });
-
-    // Lightbox functionality
-    galleryItems.forEach(item => {
-      item.addEventListener('click', function() {
-        const bg = this.querySelector('.gallery-bg');
-        const caption = this.querySelector('.gallery-caption').textContent;
-        const bgStyle = bg.getAttribute('style');
-        const imgUrl = bgStyle.match(/url\('([^']+)'\)/)[1];
-        
-        lightboxImg.src = imgUrl;
-        lightboxCaption.textContent = caption;
-        lightbox.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      });
-    });
-
-    // Close lightbox
-    function closeLightbox() {
-      lightbox.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-
-    lightboxClose.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', function(e) {
-      if (e.target === lightbox) {
-        closeLightbox();
-      }
-    });
-
-    // Escape key to close
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-        closeLightbox();
-      }
-    });
-  });
-</script>
-
+  <script src="main.js"></script>
 </body>
 </html>
