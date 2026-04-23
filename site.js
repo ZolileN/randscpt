@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const reelPrev = document.getElementById("reelPrev");
   const reelNext = document.getElementById("reelNext");
   const currentYear = document.getElementById("currentYear");
+  const heroVideo = document.getElementById("heroVideo");
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const sections = document.querySelectorAll(".fade-up");
@@ -47,6 +48,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (currentYear) {
     currentYear.textContent = String(new Date().getFullYear());
+  }
+
+  const shouldLoadHeroVideo = () => !prefersReducedMotion;
+
+  if (heroVideo && shouldLoadHeroVideo()) {
+    const source = heroVideo.dataset.src;
+    if (source) {
+      heroVideo.src = source;
+      heroVideo.load();
+      heroVideo.play().catch(() => {
+        // If autoplay is blocked, the poster still provides a polished fallback.
+      });
+    }
   }
 
   const smoothScrollTo = (targetY) => {

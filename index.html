@@ -68,9 +68,17 @@
         <div class="hero-stage" data-parallax>
           <div class="hero-r-wrap">
             <div class="hero-r-video">
-              <video autoplay muted loop playsinline poster="images/hero.jpg">
-                <source src="videos/rands-party.mp4" type="video/mp4">
-              </video>
+              <video
+                id="heroVideo"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="none"
+                poster="images/hero.jpg"
+                data-src="videos/rands-party-optimized.mp4"
+                aria-hidden="true"
+              ></video>
             </div>
             <div class="hero-r-outline" aria-hidden="true">R</div>
           </div>
