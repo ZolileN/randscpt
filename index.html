@@ -1,302 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rands Cape Town | Premium Chisa Nyama Experience</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rands Cape Town | VIP Chisa Nyama Experience</title>
+  <meta name="description" content="Rands Cape Town blends Khayelitsha energy with premium hospitality, VIP tables, live music, and bold weekend experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
+  <div class="page-noise" aria-hidden="true"></div>
 
-  <!-- CUSTOM CURSOR -->
-  <div class="cursor" id="cursor"></div>
-
-  <!-- MINIMAL NAV -->
-  <nav id="navbar">
-    <a href="#" class="nav-logo">
-  <img src="images/logo.jpg" alt="Rands Cape Town" class="nav-logo-img">
-</a>
-    <ul class="nav-links">
-      <li><a href="#about">Origins</a></li>
-      <li><a href="#experience">The Vibe</a></li>
-      <li><a href="#menu">Palate</a></li>
-      <li><a href="#booking" class="nav-book">Reserve</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger"><span></span><span></span></button>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <section id="hero">
-    <div class="hero-bg" style="background-image: url('images/hero2.jpg')"></div>
-    <div class="hero-container">
-     <h1 class="hero-title">
-        <div class="main-word">
-          <span class="flipped-letter">R</span>ANDS
+  <header class="site-header" id="navbar">
+    <div class="nav-shell">
+      <a href="#hero" class="brandmark" aria-label="Rands Cape Town home">
+        <img src="images/logo.jpg" alt="Rands Cape Town logo">
+        <div class="brandmark-copy">
+          <strong>Rands</strong>
+          <span>Cape Town</span>
         </div>
-        <span class="sub-text">CAPE<br>TOWN</span>
-      </h1>
-      <div class="hero-badge">Khayelitsha, Cape Town · Est. 2015 · Premium Chisa Nyama</div>
-      <div class="hero-scroll" id="heroScroll">
-        <div class="scroll-line"></div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Primary navigation">
+        <a href="#story">Story</a>
+        <a href="#weekend">Weekend</a>
+        <a href="#reels">Live Vibe</a>
+        <a href="#menu">Menu</a>
+        <a href="#booking" class="button button-primary nav-book">Book a Table</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle day and night mode">
+          <span class="toggle-track">
+            <span class="toggle-label toggle-label-day">Day</span>
+            <span class="toggle-thumb"></span>
+            <span class="toggle-label toggle-label-night">Night</span>
+          </span>
+        </button>
+        <button class="hamburger" id="hamburger" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- ABOUT SECTION (Editorial Layout) -->
-  <section id="about">
-    <span class="section-label">// 01 Origins</span>
-    <div class="about-content fade-up">
-      <div class="about-left">
-        <h2 class="section-title">Born in the <em>Township</em>, built for the World.</h2>
-        <p class="about-body">
-           Rands Cape Town is more than a restaurant — it is a declaration. Situated in the heart of Khayelitsha, we are proof that world-class hospitality, premium food, and electric entertainment belong in every neighbourhood.
-        </p>
-        <blockquote class="about-quote">
-         "We are challenging the notion of what comes out of the township. You don't have to go all the way to town to get the treatment you deserve."
-          <br><small style="font-size:0.85rem; color: var(--text-muted); font-style:normal; font-family:'Space Mono',monospace; letter-spacing:0.1em;">— Mfundo, Co-Founder</small>
-        </blockquote>
-      </div>
-      <div class="about-right">
-        <!-- Asymmetrical spacing creates the FYN look -->
-        <img src="images/rands10.jpg" alt="Rands Premium Experience" class="about-image">
-        <div class="stat-item fade-up">
-          <span class="stat-num">295K</span>
-          <span class="stat-label">Community Followers</span>
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid">
+        <div class="hero-stage" data-parallax>
+          <div class="hero-r-wrap">
+            <div class="hero-r-video">
+              <video autoplay muted loop playsinline poster="images/hero.jpg">
+                <source src="videos/rands-party.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="hero-r-outline" aria-hidden="true">R</div>
+          </div>
         </div>
-        <div class="stat-item fade-up">
-          <span class="stat-num">4.5*</span>
-          <span class="stat-label">Google Rating</span>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- CULTURAL STORY -->
-  <section id="culture">
-    <div class="section-header fade-up">
+        <div class="hero-copy fade-up">
+          <div class="eyebrow">Khayelitsha, Cape Town</div>
+          <h1>Where Khayelitsha Meets Luxury.</h1>
+          <p class="hero-lead">
+            A red-hot social address for premium braai, statement tables, and weekends that feel editorial, electric, and unmistakably local.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary shimmer-button" href="https://wa.me/27838746082?text=Hi%20Rands%20Cape%20Town%2C%20I%27d%20like%20to%20book%20a%20VIP%20table." target="_blank" rel="noreferrer">Book VIP on WhatsApp</a>
+            <a class="button button-secondary" href="#weekend">Explore This Weekend</a>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <span class="meta-kicker">Known For</span>
+              <strong>VIP tables, braai culture, live energy</strong>
+            </div>
+            <div>
+              <span class="meta-kicker">Mood</span>
+              <strong>High fashion by day. High tempo by night.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hook-strip">
+      <p>Premium chisa nyama with the pulse of a live crowd, the confidence of a luxury brand, and a booking path that feels immediate.</p>
+    </section>
+
+    <section class="story section-shell" id="story">
+      <div class="section-head fade-up">
+        <span class="section-label">Origins</span>
+        <h2>Born in the township, styled for the world.</h2>
+      </div>
+
+      <div class="story-grid">
+        <article class="story-copy fade-up">
+          <p>
+            Rands Cape Town turns Khayelitsha hospitality into a destination experience. The atmosphere is social, the service is elevated, and every table feels like it belongs in the weekend conversation.
+          </p>
+          <blockquote>
+            “You do not need to leave the township to get the treatment you deserve.”
+          </blockquote>
+          <div class="story-stats">
+            <div class="stat-card">
+              <span class="stat-value">295K</span>
+              <span class="stat-label-text">followers across social channels</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">VIP</span>
+              <span class="stat-label-text">table culture, bottle service, destination energy</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="story-media fade-up">
+          <img src="images/rands10.jpg" alt="Guests at Rands Cape Town enjoying the premium experience">
+          <div class="story-card glass-card">
+            <span class="card-label">House Note</span>
+            <p>Red stays intentional. White stays clean. The vibe stays unmistakable.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="weekend section-shell" id="weekend">
+      <div class="section-head fade-up">
+        <span class="section-label">This Weekend At Rands</span>
+        <h2>The lineup feels current, not static.</h2>
+      </div>
+
+      <div class="weekend-grid">
+        <article class="countdown-panel fade-up">
+          <div class="countdown-topline">
+            <span class="live-pill">Next event</span>
+            <strong id="nextEventLabel">Sunday Session</strong>
+          </div>
+          <h3 id="nextEventTitle">Sunday Session Luxury Braai</h3>
+          <p id="nextEventMeta">Sunday, 26 April at 15:00</p>
+          <div class="countdown-row" id="countdown" aria-live="polite">
+            <div class="time-box"><span id="days">00</span><small>Days</small></div>
+            <div class="time-box"><span id="hours">00</span><small>Hours</small></div>
+            <div class="time-box"><span id="minutes">00</span><small>Minutes</small></div>
+            <div class="time-box"><span id="seconds">00</span><small>Seconds</small></div>
+          </div>
+          <div class="weekend-notes">
+            <div class="note-card">
+              <span class="card-label">Tables</span>
+              <p>VIP areas move fastest when Sunday rolls around.</p>
+            </div>
+            <div class="note-card">
+              <span class="card-label">Dress Code</span>
+              <p>Sharp day looks that can carry into night energy.</p>
+            </div>
+          </div>
+        </article>
+
+        <aside class="event-stack fade-up">
+          <article class="event-card featured-event">
+            <img src="images/sunday.jpg" alt="Sunday Session flyer style image">
+            <div class="event-copy">
+              <span class="card-label">Sun</span>
+              <h3>Sunday Session</h3>
+              <p>Daytime indulgence, live selectors, and signature table energy.</p>
+            </div>
+          </article>
+          <article class="event-card">
+            <img src="images/stage.jpg" alt="Live stage atmosphere at Rands">
+            <div class="event-copy">
+              <span class="card-label">Late Night</span>
+              <h3>Main Floor Heat</h3>
+              <p>As the lights dip, the room shifts into a sharper, louder tempo.</p>
+            </div>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="film-strip section-shell">
+      <div class="section-head fade-up">
+        <span class="section-label">Latest Flyers</span>
+        <h2>A scrolling strip of what people want in their camera roll.</h2>
+      </div>
+
+      <div class="film-scroll fade-up">
+        <article class="film-card">
+          <img src="images/event.jpg" alt="Saturday night flyer">
+          <div class="film-copy">
+            <span>Saturday</span>
+            <strong>Night Experience</strong>
+          </div>
+        </article>
+        <article class="film-card">
+          <img src="images/casamigos-event.jpg" alt="Casamigos event poster">
+          <div class="film-copy">
+            <span>Special Partner</span>
+            <strong>Casamigos Night</strong>
+          </div>
+        </article>
+        <article class="film-card">
+          <img src="images/mshayi.jpg" alt="Guest performance visual">
+          <div class="film-copy">
+            <span>Guest Energy</span>
+            <strong>Fly-In Talent</strong>
+          </div>
+        </article>
+        <article class="film-card">
+          <img src="images/phori.jpg" alt="Weekend crowd moment">
+          <div class="film-copy">
+            <span>Sunday</span>
+            <strong>Afterglow Crowd</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="reels section-shell" id="reels">
+      <div class="section-head fade-up">
+        <span class="section-label">Live Vibe</span>
+        <h2>An Instagram-style reel rail that keeps the page alive.</h2>
+      </div>
+
+      <div class="reel-shell fade-up">
+        <button class="reel-control" id="reelPrev" type="button" aria-label="Previous reel">‹</button>
+        <div class="reel-track" id="reelTrack">
+          <article class="reel-card">
+            <img src="images/vibe.jpg" alt="Crowd vibe at Rands">
+            <div class="reel-copy">
+              <strong>@randscapetown</strong>
+              <span>2h ago · Tables filling up</span>
+            </div>
+          </article>
+          <article class="reel-card">
+            <img src="images/night2.jpg" alt="Night crowd at Rands">
+            <div class="reel-copy">
+              <strong>@randscapetown</strong>
+              <span>5h ago · Night mode engaged</span>
+            </div>
+          </article>
+          <article class="reel-card">
+            <img src="images/live.jpg" alt="Live moment from Rands">
+            <div class="reel-copy">
+              <strong>@randscapetown</strong>
+              <span>Yesterday · Live atmosphere</span>
+            </div>
+          </article>
+          <article class="reel-card">
+            <img src="images/vibe2.jpg" alt="Premium party moment">
+            <div class="reel-copy">
+              <strong>@randscapetown</strong>
+              <span>3d ago · Premium crowd only</span>
+            </div>
+          </article>
+        </div>
+        <button class="reel-control" id="reelNext" type="button" aria-label="Next reel">›</button>
+      </div>
+    </section>
+
+    <section class="experience section-shell" id="experience">
+      <div class="section-head fade-up">
+        <span class="section-label">The Vibe</span>
+        <h2>Every section needs to sell a feeling.</h2>
+      </div>
+
+      <div class="experience-grid">
+        <article class="experience-card wide fade-up">
+          <img src="images/music.jpg" alt="Live music at Rands">
+          <div class="experience-copy">
+            <span class="card-label">The Sound</span>
+            <h3>Live music with a real pulse.</h3>
+            <p>Amapiano, house, and crowd-first programming shape the room from first arrival to last bottle.</p>
+          </div>
+        </article>
+        <article class="experience-card fade-up">
+          <img src="images/vip.jpg" alt="VIP experience at Rands">
+          <div class="experience-copy">
+            <span class="card-label">The Tables</span>
+            <h3>VIP service that feels visible.</h3>
+            <p>Private seating, premium pours, and the kind of arrival that deserves a camera.</p>
+          </div>
+        </article>
+        <article class="experience-card fade-up">
+          <img src="images/security.jpg" alt="Secure premium venue experience">
+          <div class="experience-copy">
+            <span class="card-label">The Standard</span>
+            <h3>Luxury with confidence.</h3>
+            <p>Thoughtful service, visible order, and a venue experience designed to feel premium at every touchpoint.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section section-shell" id="menu">
+      <div class="section-head fade-up">
+        <span class="section-label">The Menu</span>
+        <h2>A curated plate deserves a visual grid.</h2>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card fade-up">
+          <img src="images/braai.jpg" alt="Premium braai platter at Rands">
+          <div class="menu-overlay">
+            <span class="card-label">Signature</span>
+            <h3>Rands Braai Board</h3>
+            <p>Charcoal-fired cuts, plated for sharing, served with the confidence of a house signature.</p>
+          </div>
+        </article>
+        <article class="menu-card fade-up">
+          <img src="images/casamigos.jpg" alt="Premium drinks at Rands">
+          <div class="menu-overlay">
+            <span class="card-label">Bottle Service</span>
+            <h3>VIP Spirits Ritual</h3>
+            <p>Premium pours, parade presentation, and table service designed for the social feed.</p>
+          </div>
+        </article>
+        <article class="menu-card fade-up">
+          <img src="images/cigar.jpg" alt="Luxury lifestyle detail">
+          <div class="menu-overlay">
+            <span class="card-label">After Hours</span>
+            <h3>Late Table Mood</h3>
+            <p>For guests who want the evening to slow down without losing its edge.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="social-proof section-shell" id="social-proof">
+      <div class="section-head fade-up">
+        <span class="section-label">Seen At Rands</span>
+        <h2>Social proof that feels aspirational, not filler.</h2>
+      </div>
+
+      <div class="social-grid">
+        <article class="social-card fade-up">
+          <img src="images/murda.jpg" alt="Featured artist at Rands">
+          <div class="social-copy">
+            <span class="card-label">Featured Artist</span>
+            <h3>Headline talent meets a full house.</h3>
+            <p>Moments built for reposts, recaps, and premium brand memory.</p>
+          </div>
+        </article>
+        <article class="social-card fade-up">
+          <img src="images/twins.jpg" alt="Style-conscious guests at Rands">
+          <div class="social-copy">
+            <span class="card-label">Style Crowd</span>
+            <h3>The guest list looks the part.</h3>
+            <p>Fashion-forward regulars help the venue feel current before the first set starts.</p>
+          </div>
+        </article>
+        <article class="social-card fade-up">
+          <img src="images/don.jpg" alt="Premium nightlife moment at Rands">
+          <div class="social-copy">
+            <span class="card-label">Night Energy</span>
+            <h3>Luxury that survives the transition into darkness.</h3>
+            <p>Exactly where the day crowd turns into the late-night crowd.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-band section-shell" id="booking">
+      <div class="cta-panel fade-up">
+        <div>
+          <span class="section-label">VIP Inquiries</span>
+          <h2>Reserve the table before somebody else posts from it.</h2>
+          <p>WhatsApp is the fastest route for bookings, celebration tables, and premium group arrivals.</p>
+        </div>
+        <a class="button button-primary shimmer-button" href="https://wa.me/27838746082?text=Hi%20Rands%20Cape%20Town%2C%20I%27d%20like%20to%20reserve%20a%20table." target="_blank" rel="noreferrer">WhatsApp Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
       <div>
-        <div class="section-label">// 02 Our Heritage</div>
-        <h2 class="section-title">From Khayelitsha<br><em>To The World</em></h2>
+        <div class="footer-brand">Rands Cape Town</div>
+        <p>Premium chisa nyama, live energy, and destination-worthy weekends in Khayelitsha.</p>
       </div>
-    </div>
-
-    <div class="culture-timeline fade-up">
-      <div class="timeline-item">
-        <div class="timeline-year">2015</div>
-        <div class="timeline-content">
-          <h3 class="timeline-title">The Beginning</h3>
-          <p class="timeline-desc">Born from a vision to bring world-class hospitality to Khayelitsha, Rands started as a small local spot with big dreams.</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-year">2018</div>
-        <div class="timeline-content">
-          <h3 class="timeline-title">Community Roots</h3>
-          <p class="timeline-desc">Became a local institution, known for authentic braai culture and supporting township artists and musicians.</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-year">2020</div>
-        <div class="timeline-content">
-          <h3 class="timeline-title">National Recognition</h3>
-          <p class="timeline-desc">Featured in major publications and became a destination for food lovers seeking authentic South African experiences.</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-year">2023</div>
-        <div class="timeline-content">
-          <h3 class="timeline-title">Global Impact</h3>
-          <p class="timeline-desc">International visitors and celebrities discovered Rands, putting Khayelitsha on the global culinary map.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="culture-values fade-up">
-      <div class="value-card">
-        <div class="value-icon">flame</div>
-        <h3 class="value-title">Authentic Fire</h3>
-        <p class="value-desc">Traditional braai methods passed down through generations, cooked with passion and served with pride.</p>
-      </div>
-      
-      <div class="value-card">
-        <div class="value-icon">music</div>
-        <h3 class="value-title">Township Sounds</h3>
-        <p class="value-desc">Celebrating South African music culture, from local artists to international DJs who respect our roots.</p>
-      </div>
-      
-      <div class="value-card">
-        <div class="value-icon">community</div>
-        <h3 class="value-title">Unity & Pride</h3>
-        <p class="value-desc">Creating opportunities, supporting local talent, and showing the world the beauty of township excellence.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE (Staggered Grid) -->
-  <section id="experience">
-    <span class="section-label">// 03 The Experience</span>
-    <a href="https://www.instagram.com/randscapetown/" class="btn-ghost" target="_blank">View on Instagram →</a>
-    <div class="experience-grid">
-      <div class="exp-card fade-up">
-        <img src="images/music.jpg" alt="Music">
-        <h3 class="exp-title">The Music</h3>
-        <p class="about-body">Live performances that bring the township spirit to life.</p>
-      </div>
-      <div class="exp-card fade-up">
-        <img src="images/live.jpg" alt="Entertainment">
-        <h3 class="exp-title">The Sound</h3>
-        <p class="about-body">Where the country's greatest artists come to play.</p>
-      </div>
-      <div class="exp-card fade-up">
-        <img src="images/night2.jpg" alt="Nightlife">
-        <h3 class="exp-title">The Nightlife</h3>
-        <p class="about-body">Where the city comes to celebrate, dance, and unwind under the stars.</p>
-      </div>
-      <div class="exp-card fade-up">
-        <img src="images/vibe2.jpg" alt="Vibe">
-        <h3 class="exp-title">The Vibe</h3>
-        <p class="about-body">Party atmosphere, great music, and unforgettable moments.</p>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- GALLERY (Horizontal Reveal) -->
-  <section id="gallery" style="padding-bottom: 0;">
-    <span class="section-label">// 04 In Focus</span>
-    <div class="sliding-gallery fade-up">
-      <div class="gallery-container" id="galleryContainer">
-        <div class="gallery-slide"><img src="images/phori.jpg" alt="Vibe 1"></div>
-        <div class="gallery-slide"><img src="images/cigar.jpg" alt="Vibe 2"></div>
-        <div class="gallery-slide"><img src="images/night.jpg" alt="Vibe 3"></div>
-        <div class="gallery-slide"><img src="images/security.jpg" alt="Security"></div>
-        <div class="gallery-slide"><img src="images/life.jpg" alt="Saturday Night Vibes"></div>
-        <div class="gallery-slide"><img src="images/mshayi.jpg" alt="Khayelitsha Nights"></div>
-        <div class="gallery-slide"><img src="images/vip.jpg" alt="VIP Lounge Experience"></div>
-        <div class="gallery-slide"><img src="images/vibe.jpg" alt="Live Entertainment"></div>
-        <div class="gallery-slide"><img src="images/live.jpg" alt="Summer Sessions"></div>
-        <div class="gallery-slide"><img src="images/music.jpg" alt="World Class Music"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MENU SECTION -->
-  <section id="menu">
-    <span class="section-label">// 05 The Palate</span>
-    <h2 class="section-title">A Modern <em>Curation</em></h2>
-    <div class="menu-container fade-up">
-      <div class="menu-item">
-        <span class="menu-item-name">Signature Lamb Chops</span>
-        <span class="menu-item-price">R 450</span>
-      </div>
-      <div class="menu-item">
-        <span class="menu-item-name">The Rands Platter</span>
-        <span class="menu-item-price">R 450</span>
-      </div>
-      <div class="menu-item">
-        <span class="menu-item-name">Traditional Chakalaka</span>
-        <span class="menu-item-price">Included</span>
-      </div>
-      <div class="menu-item">
-        <span class="menu-item-name">Pap & Creamy Spinach</span>
-        <span class="menu-item-price">R 120</span>
-      </div>
-      <div class="menu-item">
-        <span class="menu-item-name">Boerewors</span>
-        <span class="menu-item-price">R 180</span>
-      </div>
-      <div class="menu-item">
-        <span class="menu-item-name">Chicken Wings</span>
-        <span class="menu-item-price">R 150</span>
-      </div>
-      <div class="menu-item">
-        <span class="menu-item-name">Pork Ribs</span>
-        <span class="menu-item-price">R 220</span>
-      </div>
-      <div class="menu-item">
-        <span class="menu-item-name">Grilled Sausages</span>
-        <span class="menu-item-price">R 160</span>
-      </div>
-      <div class="menu-item">
-        <span class="menu-item-name">Braai Platter (For 2)</span>
-        <span class="menu-item-price">R 850</span>
-      </div>
-      <div class="menu-item">
-        <span class="menu-item-name">Sunday Special</span>
-        <span class="menu-item-price">R 280</span>
-      </div>
-      <div class="menu-item">
-        <span class="menu-item-name">Kids Meal</span>
-        <span class="menu-item-price">R 95</span>
-      </div>
-      <div class="menu-item">
-        <span class="menu-item-name">Fresh Salads</span>
-        <span class="menu-item-price">R 85</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-top">
       <div>
-          <div class="footer-brand-name">RANDS<br><span>CAPE TOWN</span></div>
-          <p class="footer-tagline">Premium Chisa Nyama & Entertainment Mecca. Born in Khayelitsha. Built for World.</p>
-          <div class="footer-social">
-            <a href="https://www.instagram.com/randscapetown/" class="social-btn" target="_blank" title="Instagram">IG</a>
-            <a href="https://web.facebook.com/RandsCPT/" class="social-btn" target="_blank" title="Facebook">FB</a>
-            <a href="https://wa.me/27838746082" class="social-btn" target="_blank" title="WhatsApp">WA</a>
-            <a href="https://www.tiktok.com/@randscapetown" class="social-btn" target="_blank" title="TikTok">TK</a>
-          </div>
-        </div>
-
-        <div>
-          <div class="footer-col-title">Navigate</div>
-          <ul class="footer-links">
-            <li><a href="#about">About Rands</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#booking">Reservations</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <div class="footer-col-title">Hours</div>
-          <ul class="footer-links">
-            <li><span style="color:var(--text-muted); font-size:0.95rem">Mon–Wed: Closed</span></li>
-            <li><span style="color:var(--cream); font-size:0.95rem">Thu–Sat: 10AM–11PM</span></li>
-            <li><span style="color:var(--cream); font-size:0.95rem">Sunday: 10AM–10PM</span></li>
-          </ul>
-        </div>
-
-        <div>
-          <div class="footer-col-title">Contact</div>
-          <div class="footer-contact-item">
-            <div class="footer-contact-label">Address</div>
-            <div class="footer-contact-value">6 Makhabeni Road, Khaya Bazaar<br>Khayelitsha, Cape Town 7784</div>
-          </div>
-          <div class="footer-contact-item">
-            <div class="footer-contact-label">Phone & WhatsApp</div>
-            <div class="footer-contact-value"><a href="tel:+27838746082">+27 83 874 6082</a></div>
-          </div>
-          <div class="footer-contact-item">
-            <div class="footer-contact-label">Private Events</div>
-            <div class="footer-contact-value"><a href="https://wa.me/27838746082?text=Private%20event%20enquiry" target="_blank">Contact via WhatsApp</a></div>
-          </div>
-        </div>
+        <span class="footer-title">Visit</span>
+        <p>6 Makhabeni Road, Khaya Bazaar<br>Khayelitsha, Cape Town</p>
+      </div>
+      <div>
+        <span class="footer-title">Connect</span>
+        <p><a href="tel:+27838746082">+27 83 874 6082</a><br><a href="https://www.instagram.com/randscapetown/" target="_blank" rel="noreferrer">Instagram</a></p>
+      </div>
     </div>
-
     <div class="footer-bottom">
-      <span class="footer-copy"> 2026 Rands Cape Town · All Rights Reserved</span>
-      <span class="footer-copy">Khayelitsha · Cape Town · South Africa</span>
+      <span>© <span id="currentYear"></span> Rands Cape Town</span>
+      <span>Day to night, always in red.</span>
+    </div>
+    <div class="footer-credit">
+      <span>Built with <span class="footer-credit-heart" aria-hidden="true">❤</span> and modern web technologies by</span>
+      <a href="https://mlkcomputer.com/" target="_blank" rel="noreferrer">MLK Computer Consulting</a>
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <a class="mobile-fab" href="https://wa.me/27838746082?text=Hi%20Rands%20Cape%20Town%2C%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noreferrer" aria-label="Book a table on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M7 2h10a2 2 0 0 1 2 2v16l-3-2-3 2-3-2-3 2V4a2 2 0 0 1 2-2zm1 5h8M8 11h8M8 15h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+
+  <script src="site.js"></script>
 </body>
 </html>
