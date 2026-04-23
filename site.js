@@ -111,7 +111,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (themeToggle) {
     const savedTheme = localStorage.getItem("rands-theme");
-    if (savedTheme === "night") {
+    if (savedTheme === "day") {
+      body.classList.remove("theme-night");
+    } else {
       body.classList.add("theme-night");
     }
 

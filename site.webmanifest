@@ -1,0 +1,26 @@
+{
+  "name": "Rands Cape Town",
+  "short_name": "Rands",
+  "description": "Premium chisa nyama, live energy, and destination-worthy weekends in Khayelitsha.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f8f6f2",
+  "theme_color": "#c4121a",
+  "icons": [
+    {
+      "src": "images/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/apple-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "images/android-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}
